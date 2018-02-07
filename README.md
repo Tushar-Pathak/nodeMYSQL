@@ -16,9 +16,7 @@ var nodeMYSQL = require('node-mysql');
 [NO_BACKSLASH_ESCAPES](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_no_backslash_escapes)
 SQL mode is disabled (which is the default state for MySQL servers).
 
-In order to avoid SQL Injection attacks, you should always escape any user
-provided data before using it inside a SQL query. You can do so using the
-`SqlString.escape()` method:
+In order to avoid SQL Injection attacks user input is already escaped.
 
 ```js
 //To establish a connection to database. 
@@ -168,7 +166,7 @@ To select data from database we can use either methods:
 Method-1:Simply passing MYSQL query as argument in the function.
 
 ```js
-conn.update('Update student SET student_name='ABCD')
+conn.update("Update student SET student_name='ABCD'")
  .then((result)=>{
    //result
  })
