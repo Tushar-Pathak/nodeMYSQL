@@ -1,4 +1,4 @@
-# node-mysql
+# nodeMYSQL
 
 Simplifies Your MYSQL queries.
 
@@ -7,7 +7,7 @@ Simplifies Your MYSQL queries.
 <!-- eslint-disable no-unused-vars -->
 
 ```js
-var nodeMYSQL = require('node-mysql');
+var nodeMYSQL = require('nodeMYSQL');
 ```
 
 ### Escaping query values
